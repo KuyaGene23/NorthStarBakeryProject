@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Breads, pastries, and made-to-order cakes from North Star Bakery in Duluth, Minnesota, with price ranges and pre-order information.">
+    <title>North Star Bakery | Breads, Pastries, and Cakes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="wrap">
+            <a class="brand" href="index.html">
+                <img src="bakery-logo.png"
+                     alt="North Star Bakery logo: a loaf of bread with a wheat sprig inside it"
+                     width="200" height="171">
+                <span>
+                    <span class="brand-name">North Star Bakery</span><br>
+                    <span class="tagline">Handmade bread and pastries for the neighborhood family</span>
+                </span>
+            </a>
+            <nav class="site-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html" aria-current="page">Breads, Pastries, and Cakes</a></li>
+                    <li><a href="about.html">About the Bakery</a></li>
+                    <li><a href="contact.html">Contact and Pre-Orders</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="hero">
+            <div class="wrap">
+                <h1>Our Breads, Pastries, and Cakes</h1>
+                <p class="intro">Everything below is made by hand in small batches, so
+                   some items sell out early. We do not take payment online. To reserve
+                   something, send a <a href="contact.html">pre-order request</a> and pay
+                   when you pick up.</p>
+            </div>
+        </section>
+
+        <section aria-labelledby="preorder-list-heading">
+            <div class="wrap">
+                <h2 id="preorder-list-heading">Your Pre-Order List</h2>
+                <div class="panel">
+                    <p id="list-status"> Tell us what you would like on
+                       the <a href="contact.html">Contact and Pre-Orders page</a>.</p>
+                    <ul class="list-items" id="list-items"></ul>
+                    <div class="form-actions" id="list-actions" hidden>
+                        <a class="button-link" href="contact.html">Send this list as a pre-order</a>
+                        <button type="button" id="list-clear">Clear list</button>
+                    </div>
+                </div>
+                <p class="visually-hidden" id="list-announcer" role="status" aria-live="polite"></p>
+            </div>
+        </section>
+
+        <section aria-labelledby="signature-heading">
+            <div class="wrap">
+                <h2 id="signature-heading">The Signature Loaf</h2>
+                <figure>
+                    <img src="bakery-signature-loaf.png"
+                         alt="A baker holding the Signature Loaf, a dark, flour-dusted round of sourdough, in a checked linen cloth"
+                         width="600" height="600">
+                    <figcaption>Our Signature Loaf: a dark-crusted country sourdough,
+                    fermented for 24 hours and handed to you still warm. $10 to $12 per
+                    loaf.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="band" aria-labelledby="breads-heading">
+            <div class="wrap">
+                <h2 id="breads-heading">Breads</h2>
+                <p>Baked every morning.</p>
+                <p class="price">$8 to $12 per loaf</p>
+                <ul class="card-list">
+                    <li data-product-id="signature-loaf"><strong>Signature Loaf</strong> Country sourdough with a crisp
+                        crust and an open, chewy crumb.</li>
+                    <li data-product-id="honey-oat"><strong>Honey Oat Sandwich Bread
+                      (employee favorite)
+                    </strong> Soft, lightly sweet,
+                        and sized for lunchbox sandwiches.</li>
+                    <li data-product-id="seeded-rye"><strong>Seeded Rye</strong> Dense and hearty, made with caraway
+                        and sunflower seeds.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section aria-labelledby="pastries-heading">
+            <div class="wrap">
+                <h2 id="pastries-heading">Pastries</h2>
+                <p>Ready when the doors open.</p>
+                <p class="price">$3 to $6 each</p>
+                <ul class="card-list">
+                    <li data-product-id="butter-croissant"><strong>Butter Croissant</strong> Laminated over two days with
+                        local butter.</li>
+                    <li data-product-id="cinnamon-roll"><strong>Cinnamon Roll (employee favorite)</strong> Soft, generously spiced, and
+                        finished with cream cheese icing.</li>
+                    <li data-product-id="fruit-danish"><strong>Seasonal Fruit Danish</strong> Filled with the fruit choices of 
+                    strawberry, blueberries, or raspberries, depending on the season.</li>
+                    <li data-product-id="oatmeal-creme-cookies"><strong>Oatmeal Creme Cookies (employee favorite)</strong> Oatmeal, coconut creme filling, and
+                        butter swirl, sold singly or by the dozen.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="band" aria-labelledby="cakes-heading">
+            <div class="wrap">
+                <h2 id="cakes-heading">Cakes</h2>
+                <p>Made to order with at least 3 days of notice.</p>
+                <p class="price">$36 to $100, depending on size and decoration</p>
+                <ul class="card-list">
+                    <li data-product-id="layer-cake"><strong>Celebration Seven Layer Cake</strong> Vanilla, chocolate, or
+                        strawberry, with your choice of buttercream.</li>
+                    <li data-product-id="carrot-cake"><strong>Coconut Creme Cake</strong> A family recipe with walnuts, shredded coconut, and
+                        cream cheese frosting.</li>
+                    <li data-product-id="sheet-cake"><strong>Custom Event Sheet Cake</strong> Serves 24 to 48 guests for
+                        school, parties, and community events.</li>
+                </ul>
+                <p>Planning an event? Tell us the date and guest count on the
+                   <a href="contact.html">Contact and Pre-Orders page</a> and we will
+                   help you choose.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <address>
+                North Star Bakery<br>
+               123 North Star Lane, Seattle, WA 98203<br>
+                <a  href="tel:+12051234567">(205) 123-4567</a><br>
+                <a href="mailto:contact@northstarbakery.com">contact@northstarbakery.com</a>
+            </address>
+            <p>&copy; 2026 North Star Bakery. All rights reserved · Local grains, handmade breads, and community events.</p>
+        </div>
+    </footer>
+    <script src="main.js" defer></script>
+</body>
+</html>
