@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The story of North Star Bakery in Duluth, Minnesota: how it started, where the ingredients come from, and who bakes each morning.">
+    <title>North Star Bakery | About the Bakery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="wrap">
+            <a class="brand" href="index.html">
+                <img src="bakery-logo.png"
+                     alt="North Star Bakery logo: a loaf of bread with a wheat sprig inside it"
+                     width="200" height="171">
+                <span>
+                    <span class="brand-name">North Star Bakery</span><br>
+                    <span class="tagline">Handmade bread and pastries for the neighborhood</span>
+                </span>
+            </a>
+            <nav class="site-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Breads, Pastries, and Cakes</a></li>
+                    <li><a href="about.html" aria-current="page">About the Bakery</a></li>
+                    <li><a href="contact.html">Contact and Pre-Orders</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="hero">
+            <div class="wrap">
+                <h1>About North Star Bakery</h1>
+                <p class="intro">One storefront, one oven, and the same way of working
+                   since 2016.</p>
+            </div>
+        </section>
+
+        <section aria-labelledby="story-heading">
+            <div class="wrap">
+                <h2 id="story-heading">Our Story</h2>
+                <p>North Star Bakery opened in 2016, when former wrestler, John Cena started selling
+                   sourdough from a folding table at the Saturday farmers market.
+                   Neighbors kept asking where they could buy it during the week, so he
+                   rented a small storefront on North Star Lane and filled the front window
+                   with bread.</p>
+                <p>A decade later, we are still in the same spot and still
+                   baking the same way: by hand, in small batches, for the people who
+                   live and work around us.</p>
+                <figure>
+                    <img src="bakery-storefront.png"
+                         alt="The front of North Star Bakery, with shelves of bread, rolls, and pastries on display in the shop window"
+                         width="800" height="477">
+                    <figcaption>Our storefront on North Star Lane, the same one John
+                    rented in 2016.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="band" aria-labelledby="sourcing-heading">
+            <div class="wrap">
+                <h2 id="sourcing-heading">Our Sourcing Philosophy</h2>
+                <p>Good bread starts with good ingredients, and we would rather buy them
+                   from people we know.</p>
+                <ul class="bullets">
+                    <li>Flour is stone-milled from grain grown by farms within 150 miles.</li>
+                    <li>Butter, milk, and eggs come from local dairies and family farms.</li>
+                    <li>Fruit fillings follow the season, so the danish changes with the market.</li>
+                    <li>Unsold bread is donated to the neighborhood food shelf every evening.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section aria-labelledby="staff-heading">
+            <div class="wrap">
+                <h2 id="staff-heading">Meet the Staff</h2>
+                <ul class="card-list">
+                    <li><strong>John Cena, owner and head baker</strong> Starts the
+                        ovens at 4:50 a.m. and still shapes every Signature Loaf
+                        himself.</li>
+                    <li><strong>Cloud Strife, pastry lead</strong> Runs the croissant and
+                        danish program and decorates our made-to-order cakes.</li>
+                    <li><strong>Tifa Lockhart, front of house</strong> Manages pre-orders
+                        and events, and remembers almost every usual customer's go to orders.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="band" aria-labelledby="video-heading">
+            <div class="wrap">
+                <h2 id="video-heading">Behind the Scenes</h2>
+                <p>Watch a 25-second look inside our kitchen as the morning's first
+                   loaves come out of the oven. The video has no sound, so no captions
+                   are needed.</p>
+                <div class="media">
+                    <video controls preload="metadata" width="640" height="360">
+                        <source src="bakery-behind-scenes.mp4" type="video/mp4">
+                        Your browser does not support the video player. You can
+                        <a href="bakery-behind-scenes.mp4">download the behind-the-scenes video (MP4)</a>
+                        instead. The silent, 25-second video shows a baker using a wooden
+                        peel to lift steaming round loaves out of a deck oven at North
+                        Star Bakery.
+                    </video>
+                    <p class="fallback">If the player does not load, you can
+                       <a href="bakery-behind-scenes.mp4">download the video (MP4)</a>.
+                       It is a silent, 25-second clip of a baker using a wooden peel to
+                       lift steaming round loaves out of our deck oven.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <address>
+                North Star Bakery<br>
+                123 North Star Lane, Seattle, WA 98203<br>
+                <a href="tel:+12051234567">(205) 123-4567</a><br>
+                <a href="mailto:contact@northstarbakery.com">contact@northstarbakery.com</a>
+            </address>
+            <p>&copy; 2026 North Star Bakery. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="main.js" defer></script>
+</body>
+</html>
