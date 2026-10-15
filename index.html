@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="North Star Bakery is a neighborhood bakery on True North Lane in Seattle, WA, baking bread, pastries, and made-to-order cakes by hand every morning.">
+    <title>North Star Bakery | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="wrap">
+            <a class="brand" href="index.html">
+                <img src="bakery-logo.png"
+                     alt="North Star Bakery logo: a loaf of bread with a wheat sprig inside it"
+                     width="200" height="171">
+                <span>
+                    <span class="brand-name">North Star Bakery</span><br>
+                    <span class="tagline">Handmade bread and pastries for the neighborhood family</span>
+                </span>
+            </a>
+            <nav class="site-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="products.html">Breads, Pastries, and Cakes</a></li>
+                    <li><a href="about.html">About the Bakery</a></li>
+                    <li><a href="contact.html">Contact infomation and Pre-Orders</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="hero">
+            <div class="wrap">
+                <h1>Welcome to North Star Bakery</h1>
+                <p class="intro">We are a small neighborhood bakery on North Star Lane.
+                   Everything in the case is mixed, shaped, and baked by hand each
+                   morning, and we love knowing our customers by name. Stop in on your
+                   way to work, bring the kids on Saturdays for 10% off, or let us bake for your next
+                   gathering.</p>
+            </div>
+        </section>
+
+        <section aria-labelledby="known-for-heading">
+            <div class="wrap">
+                <h2 id="known-for-heading">Our Specialties</h2>
+                <ul class="card-list">
+                    <li><strong>Breads</strong> Slow-fermented sourdough and sandwich
+                        loaves, baked fresh every morning.</li>
+                    <li><strong>Pastries</strong> Butter croissants, cinnamon rolls,
+                        cookies, seasonal fruit danishes, etc.</li>
+                    <li><strong>Cakes</strong> custom-made for birthdays, weddings,
+                        and community events.</li>
+                    <li><strong>Fast Counter Service</strong> Friendly and efficient help that gets
+                        commuters out the door quickly.</li>
+                </ul>
+                <figure>
+                    <img src="bakery-bread.png"
+                         alt="Crusty, flour-dusted loaves of rustic bread stacked behind the glass of the bakery display case"
+                         width="600" height="600">
+                    <figcaption>The morning bread shelf, usually picked over by
+                    nine o'clock.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="band" aria-labelledby="featured-heading">
+            <div class="wrap">
+                <h2 id="featured-heading">Featured Item of the Week</h2>
+                <picture>
+                    <source srcset="bakery-feature-large.png" media="(min-width: 800px)"
+                            width="800" height="400">
+                    <img src="bakery-feature-small.png"
+                         alt="Wooden trays of chocolate chunk, oatmeal, and butter swirl cookies lined up in the bakery display case"
+                         width="600" height="600">
+                </picture>
+                <p>Each week we feature one of our products at a special price. This week it is our
+                   oatmeal creme cookies: buy a dozen and choose any mix of flavors. They are
+                   available while supplies last, so act fast
+                   <a href="contact.html">send us a pre-order request</a> and we will set
+                   a box aside for you.</p>
+                <p class="price">Dozen mixed cookies, $18</p>
+            </div>
+        </section>
+
+        <section aria-labelledby="welcome-audio-heading">
+            <div class="wrap">
+                <h2 id="welcome-audio-heading">Listen to Our Welcome Message</h2>
+                <p>Press play to hear a 25-second welcome from North Star Bakery.</p>
+                <div class="media">
+                    <audio controls preload="metadata">
+                        <source src="bakery-welcome.mp3" type="audio/mpeg">
+                        If your browser does not support the audio player. You can
+                        <a href="bakery-welcome.mp3">download the welcome message (MP3)</a>
+                        instead, or read the transcript below.
+                    </audio>
+                    <p class="fallback">If the player does not load, you can
+                       <a href="bakery-welcome.mp3">download the welcome message (MP3)</a>
+                       or read the full transcript below.</p>
+                    <p class="note">Transcript of the welcome message:</p>
+                    <blockquote>
+                        <p>Here at North Star Bakery, every loaf starts before sunrise. We
+                           use simple ingredients, local grains, and quality time, because our amazing
+                           bread can't be rushed. Stop by and taste the difference, or
+                           place a pre-order and we'll have them fresh and ready for you.</p>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <section class="band" aria-labelledby="hours-heading">
+            <div class="wrap">
+                <h2 id="hours-heading">Hours and Location</h2>
+                <div class="panel">
+                    <h3>Find Us</h3>
+                    <p>123 North Star Lane, Seattle, WA 98203</p>
+                    <h3>Open</h3>
+                    <p>Tuesday through Friday, 6:30 a.m. to 5:00 p.m.<br>
+                       Saturday and Sunday, 7:00 a.m. to 3:00 p.m.<br>
+                       Closed Monday.</p>
+                </div>
+                <p>See the <a href="contact.html">Contact and Pre-Orders page</a> for full
+                   hours and directions.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <address>
+                North Star Bakery<br>
+                123 North Star Lane, Seattle, WA 98203<br>
+                <a href="tel:+12051234567">(205) 123-4567</a><br>
+                <a href="mailto:contact@northstarbakery.com">contact@northstarbakery.com</a>
+            </address>
+            <p>&copy; 2026 North Star Bakery. All rights reserved · Local grains, handmade breads, and community events. </p>
+        </div>
+    </footer>
+    <script src="main.js" defer></script>
+</body>
+</html>
