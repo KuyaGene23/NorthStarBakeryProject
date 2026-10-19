@@ -544,32 +544,6 @@ button[type="reset"]:hover {
   section { padding: 3.25rem 0; }
 }
 
-/* Respect a reduced-motion preference. */
-@media (prefers-reduced-motion: reduce) {
-  * { transition: none !important; animation: none !important; }
-}
-
-/* ==============================================================
-   TOUCHSTONE 4: styles for the JavaScript features
-   --------------------------------------------------------------
-   The four brand colors are unchanged. One state color is added
-   below - a deep red used only for validation errors, because an
-   error needs to read as an error and not as decoration. It is
-   7.5:1 against the cream background, so it clears AA.
-   ============================================================== */
-
-:root {
-  --error: #9B2226;
-}
-
-/* An element with the hidden attribute must stay hidden even when a
-   class below gives it a display value. Without this, the script's
-   hidden panels and notices would show up empty. */
-[hidden] {
-  display: none !important;
-}
-
-/* --- screen-reader-only announcements ------------------------- */
 
 .visually-hidden {
   position: absolute;
