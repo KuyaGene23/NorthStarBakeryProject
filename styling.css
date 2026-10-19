@@ -5,7 +5,7 @@
   --brown: #6B3E26;
 
 
-  /* shades of brown, used for borders, shadows and banded sections. */
+  /* shades of brown that is used for borders, shadows, and banded sections. */
   --rule: rgba(107, 62, 38, 0.18);
   --band: rgba(107, 62, 38, 0.05);
   --shadow: 0 1px 2px rgba(47, 42, 38, 0.06);
