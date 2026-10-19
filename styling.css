@@ -173,7 +173,7 @@ a:hover { text-decoration: none; }
 
 section { padding: 2.25rem 0; }
 
-/* Alternating band gives the eye a place to break between sections. */
+/* Alternating band to give a better breakdown of the sections. */
 section.band { background: var(--band); }
 
 h1 {
