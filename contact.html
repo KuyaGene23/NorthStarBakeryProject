@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact North Star Bakery in Seattle, Washington, or send a pre-order request for bread, pastries, and made-to-order cakes. Hours, location, and phone number included.">
+    <title>North Star Bakery | Contact and Pre-Orders</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="wrap">
+            <a class="brand" href="index.html">
+                <img src="bakery-logo.png"
+                     alt="North Star Bakery logo: a loaf of bread with a wheat sprig inside it"
+                     width="200" height="171">
+                <span>
+                    <span class="brand-name">North Star Bakery</span><br>
+                    <span class="tagline">Handmade bread and pastries for the neighborhood</span>
+                </span>
+            </a>
+            <nav class="site-nav" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Breads, Pastries, and Cakes</a></li>
+                    <li><a href="about.html">About the Bakery</a></li>
+                    <li><a href="contact.html" aria-current="page">Contact and Pre-Orders</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="hero">
+            <div class="wrap">
+                <h1>Contact and Pre-Orders</h1>
+                <p class="intro">Use the form below to ask a question or to request a
+                   pre-order. We reply within one business day to confirm your order and
+                   pickup time. No payment is taken online. You pay when you pick up.</p>
+            </div>
+        </section>
+
+        <section aria-labelledby="form-heading">
+            <div class="wrap">
+                <h2 id="form-heading">Inquiry and Pre-Order Request Form</h2>
+                <p>Fields marked "required" must be filled in before the form can be
+                   sent.</p>
+
+                <form id="preorder-form" action="#" method="post">
+                    <p class="notice" id="restore-notice" hidden></p>
+                    <fieldset>
+                        <legend>Your Contact Details</legend>
+
+                        <div class="field">
+                            <label for="full-name">Full name (required)</label>
+                            <input type="text" id="full-name" name="full_name" required
+                                   minlength="2" maxlength="80" autocomplete="name"
+                                   aria-describedby="err-full-name">
+                            <p class="field-error" id="err-full-name" role="alert"></p>
+                        </div>
+
+                        <div class="field">
+                            <label for="email">Email address (required)</label>
+                            <input type="email" id="email" name="email" required
+                                   autocomplete="email" aria-describedby="err-email">
+                            <p class="field-error" id="err-email" role="alert"></p>
+                        </div>
+
+                        <div class="field">
+                            <label for="phone">Phone number (optional)</label>
+                            <input type="tel" id="phone" name="phone" autocomplete="tel"
+                                   pattern="\(?\d{3}\)?[\-. ]?\d{3}[\-. ]?\d{4}"
+                                   title="Enter a 10-digit phone number, such as 218-555-0142 or (218) 555-0142"
+                                   aria-describedby="phone-hint">
+                            <small id="phone-hint">Format: 218-555-0142</small>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Your Request</legend>
+
+                        <div class="field">
+                            <label for="request-type">Request type (required)</label>
+                            <select id="request-type" name="request_type" required
+                                    aria-describedby="err-request-type">
+                                <option value="">Choose a request type</option>
+                                <option value="pre-order">Pre-order for pickup</option>
+                                <option value="event">Event or large order inquiry</option>
+                                <option value="question">General question</option>
+                            </select>
+                            <p class="field-error" id="err-request-type" role="alert"></p>
+                        </div>
+
+                        <div class="field">
+                            <label for="pickup-date">Pickup date (for pre-orders)</label>
+                            <input type="date" id="pickup-date" name="pickup_date"
+                                   aria-describedby="pickup-hint err-pickup-date">
+                            <small id="pickup-hint">Please give us at least 48 hours of
+                            notice. We are closed on Mondays.</small>
+                            <p class="field-error" id="err-pickup-date" role="alert"></p>
+                        </div>
+
+                        <p class="notice" id="list-notice" hidden></p>
+
+                        <div class="field">
+                            <label for="item-details">Item details (required)</label>
+                            <textarea id="item-details" name="item_details" required
+                                      rows="5" minlength="10" maxlength="1000"
+                                      aria-describedby="item-hint err-item-details"></textarea>
+                            <small id="item-hint">Tell us which items and how many, or
+                            type your question here.</small>
+                            <p class="field-error" id="err-item-details" role="alert"></p>
+                        </div>
+
+                        <div class="field">
+                            <label for="allergy-notes">Allergy notes, if applicable (optional)</label>
+                            <textarea id="allergy-notes" name="allergy_notes"
+                                      rows="3" maxlength="500"
+                                      aria-describedby="allergy-hint"></textarea>
+                            <small id="allergy-hint">NOTE: Our kitchen handles wheat, milk,
+                            eggs, tree nuts, and peanuts.</small>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-actions">
+                        <button type="submit">Send Request</button>
+                        <button type="reset">Clear Form</button>
+                    </div>
+
+                    <p class="form-success" id="form-success" tabindex="-1"
+                       role="status" aria-live="polite" hidden></p>
+                </form>
+            </div>
+        </section>
+
+        <section class="band" aria-labelledby="location-heading">
+            <div class="wrap">
+                <h2 id="location-heading">Location</h2>
+                <p>123 North Star Lane, Seattle, WA 98203. We are on the corner of North Star Lane
+                    and 21st Jump Street. Parking is available but LIMITED spots in front of the shop,
+                    so plan accordingly. 
+                </p>
+                <figure>
+                    <img src="bakery-storefront.png"
+                         alt="The North Star Bakery storefront: a dark green door beside a large window filled with shelves of bread and pastries"
+                         width="800" height="477">
+                    <figcaption>Look for the dark green door with a "Welcome In" sign on the corner of North Star Lane
+                    and 21st Jump Street.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section aria-labelledby="hours-heading">
+            <div class="wrap">
+                <h2 id="hours-heading">Hours of Operation</h2>
+                <table>
+                    <caption>North Star Bakery weekly hours</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Day</th>
+                            <th scope="col">Hours</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Monday</th>
+                            <td>Closed</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Tuesday through Friday</th>
+                            <td>6:30 a.m. to 5:00 p.m.</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Saturday and Sunday</th>
+                            <td>7:00 a.m. to 3:00 p.m.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <address>
+                North Star Bakery<br>
+                123 North Star Lane, Seattle, WA 98203<br>
+                <a href="tel:+12185550142">(218) 555-0142</a><br>
+                <a href="mailto:hello@northstarbakery.example">hello@northstarbakery.example</a>
+            </address>
+            <p>&copy; 2026 North Star Bakery. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="scripts.js" defer></script>
+</body>
+</html>
