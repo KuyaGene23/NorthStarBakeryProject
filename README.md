@@ -1,1 +1,1 @@
-North Star Bakery project using HTML, CSS, and Javascript
+A functioning project for North Star Bakery using HTML, CSS, and Javascript.
